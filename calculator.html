@@ -38,9 +38,10 @@
         <!-- Reset Button -->
         <button type="button" class="btn btn-secondary mt-4" onclick="resetForm()">Reset</button>
       </div>
+      
 
       <!-- Right Column -->
-      <div class="col-md-6">
+      <div class="col-md-6 mt-4">
         <div class="p-3 border bg-light">
         <!-- Results Section -->
         <h2 class="mt-4">Your Results</h2>
@@ -48,22 +49,31 @@
         </div>
 
          <!-- BMI Images -->
-    <div class="row mt-4">
-        <div class="col-md-3">
+<div class="container">
+
+    <div class="row mt-4 justify-content-center">
+
+        <div class="col-md-3 m-1 border bg-light d-flex justify-content-center align-items-center">
           <img src="underweight.PNG" class="img-fluid" alt="Underweight">
           
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 m-1 border bg-light d-flex justify-content-center align-items-center">
           <img src="normal.PNG" class="img-fluid" alt="Normal">
-          
-        </div>
-        <div class="col-md-3">
+         </div>
+
+
+    
+
+    
+
+        <div class="col-md-3 m-1 border bg-light d-flex justify-content-center align-items-center">
           <img src="overweight.PNG" class="img-fluid" alt="Overweight">
-          
         </div>
-        <div class="col-md-3">
+
+        <div class="col-md-3 m-1 border bg-light d-flex justify-content-center align-items-center">
           <img src="obese.PNG" class="img-fluid" alt="Obese">
-          
+          </div>
+
         </div>
       </div>
       </div>
@@ -106,5 +116,11 @@
       document.getElementById('results').innerText = "Results will appear here.";
     }
   </script>
+  <footer>
+    
+    <p class="m-2"><span><a href="https://en.wikipedia.org/wiki/Body_mass_index" target="_blank">Learn more</a></span> about BMI</p>
+    <p class="m-2">© 2021 Company, Inc. All rights reserved.</p>
+
+  </footer>
 </body>
 </html>
