@@ -85,12 +85,19 @@
 
   <!-- Custom Script -->
   <script>
+
+
     function calculateBMI() {
       const weight = parseFloat(document.getElementById('weight').value);
       const height = parseFloat(document.getElementById('height').value);
 
       if (isNaN(weight) || isNaN(height) || height === 0) {
-        document.getElementById('results').innerText = "Please enter valid weight and height.";
+
+        // display in the results section
+        // document.getElementById('results').innerText = "Please enter valid weight and height."
+
+        //pop up alert
+         alert("Please enter valid weight and height.");
         return;
       }
 
