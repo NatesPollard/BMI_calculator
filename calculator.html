@@ -7,7 +7,16 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  
+  <style>
+    .custom-card {
+      width: 100%; /* Full width of the column */
+      height: 300px; /* Fixed height for all cards */
+    }
+    .card-img-top {
+      height: 200px; /* Fixed height for images */
+      object-fit: contain; /* Ensures images maintain aspect ratio */
+    }
+  </style>
 
 </head>
 <body>
@@ -48,34 +57,54 @@
         <p id="results" class="lead">Results will appear here.</p>
         </div>
 
-         <!-- BMI Images -->
-<div class="container">
+          <!-- BMI Images in Cards -->
+        <div class="container mt-4">
+          <div class="row">
+            <!-- Underweight Card -->
+            <div class="col-md-6 mb-4">
+              <div class="card custom-card shadow-sm">
+                <img src="underweight.PNG" class="card-img-top image-fluid m-2" alt="Underweight">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Underweight</h5>
+                  <p class="card-text">BMI less than <span class="fw-bold">18.5</span></p>
+                </div>
+              </div>
+            </div>
 
-    <div class="row mt-4 justify-content-center">
+            <!-- Normal Weight Card -->
+            <div class="col-md-6 mb-4">
+              <div class="card custom-card shadow-sm">
+                <img src="normal.PNG" class="card-img-top image-fluid m-2" alt="Normal">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Normal Weight</h5>
+                  <p class="card-text">BMI <span class="fw-bold">18.5</span> - <span class="fw-bold">24.9</span></p>
+                </div>
+              </div>
+            </div>
 
-        <div class="col-md-3 m-1 border bg-light d-flex justify-content-center align-items-center">
-          <img src="underweight.PNG" class="img-fluid" alt="Underweight">
-          
-        </div>
-        <div class="col-md-3 m-1 border bg-light d-flex justify-content-center align-items-center">
-          <img src="normal.PNG" class="img-fluid" alt="Normal">
-         </div>
+            <!-- Overweight Card -->
+            <div class="col-md-6 mb-4">
+              <div class="card custom-card shadow-sm">
+                <img src="overweight.PNG" class="card-img-top m-2" alt="Overweight">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Overweight</h5>
+                  <p class="card-text">BMI <span class="fw-bold"> 25 </span>-<span class="fw-bold"> 29.9</span></p>
+                </div>
+              </div>
+            </div>
 
-
-    
-
-    
-
-        <div class="col-md-3 m-1 border bg-light d-flex justify-content-center align-items-center">
-          <img src="overweight.PNG" class="img-fluid" alt="Overweight">
-        </div>
-
-        <div class="col-md-3 m-1 border bg-light d-flex justify-content-center align-items-center">
-          <img src="obese.PNG" class="img-fluid" alt="Obese">
+            <!-- Obese Card -->
+            <div class="col-md-6 mb-4">
+              <div class="card custom-card shadow-sm">
+                <img src="obese.PNG" class="card-img-top m-2" alt="Obese">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Obese</h5>
+                  <p class="card-text">BMI <span class="fw-bold">30</span> or higher</p>
+                </div>
+              </div>
+            </div>
           </div>
-
         </div>
-      </div>
       </div>
     </div>
   </div>
